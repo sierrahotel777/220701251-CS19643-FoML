@@ -120,8 +120,6 @@ npm start
 
 Feel free to contribute by improving model performance, frontend UI, or adding new features like image uploads and brand suggestions.
 
----
-
 ## 🧠 Author
 
 **Sanjeevan Hari** – [GitHub Profile](https://github.com/sierrahotel777)
