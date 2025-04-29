@@ -1,21 +1,8 @@
 
 # 👜 Reprice - Price Predictor
 
-## 📂 Project Structure
-Reprice - Price Predictor/
-├── backend/
-│   ├── app.py              # Flask backend API
-│   └── model.pkl           # Trained regression model
-├── frontend/
-│   └── src/
-│       ├── App.js
-│       └── components/
-│           └── Form.js     # React form to input prediction features
-├── notebooks/
-│   └── ML_model_development.ipynb  # Jupyter notebook for EDA + model training
-├── data/
-│   └── resale_luxury_data.csv      # Dataset (Kaggle version renamed)
-└── README.md
+
+<pre><code>## 📂 Project Structure ```bash Reprice - Price Predictor/ ├── backend/ │ ├── app.py # Flask backend API │ └── model.pkl # Trained regression model ├── frontend/ │ └── src/ │ ├── App.js │ └── components/ │ └── Form.js # React form to input prediction features ├── notebooks/ │ └── ML_model_development.ipynb # Jupyter notebook for EDA + model training ├── data/ │ └── resale_luxury_data.csv # Dataset (Kaggle version renamed) └── README.md ``` </code></pre>
 
 ## 📈 Dataset
 
