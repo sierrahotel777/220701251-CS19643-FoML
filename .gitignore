@@ -8,7 +8,7 @@ build/
 dist/
 *.egg-info/
 *.egg
-
+.gitignore
 # Model files
 *.pkl
 *.h5
