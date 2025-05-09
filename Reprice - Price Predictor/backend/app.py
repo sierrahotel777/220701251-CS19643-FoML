@@ -22,24 +22,20 @@ def predict():
         data = request.get_json(force=True)
         logger.debug(f"Received data: {data}")
 
-        # Map incoming fields to required fields
         transformed_data = {
             'brand_name': data.get('brand'),
             'product_name': data.get('product_name'),
-            'product_condition': data.get('product_condition'),  # Remove default value
-            'price_inr': float(data.get('original_price', 0))  # Convert to float
+            'product_condition': data.get('product_condition'),
+            'price_inr': float(data.get('original_price', 0)) 
         }
 
-        # Log transformed data for debugging
         logger.debug(f"Transformed data: {transformed_data}")
 
-        # Validate transformed data
         required_fields = ['brand_name', 'product_name', 'product_condition', 'price_inr']
         for field in required_fields:
             if not transformed_data.get(field):
                 return jsonify({'error': f'Missing or invalid field: {field}'}), 400
 
-        # Create DataFrame with transformed data
         df = pd.DataFrame([transformed_data])[required_fields]
         logger.debug(f"Input DataFrame: {df}")
 
